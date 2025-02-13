@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: 200ms;
     outline: none;
     border: none;
     background: transparent;
     cursor: default;
+    user-select: none;
+    transition: 200ms;
 }
 body{
     overflow: hidden;
+    font-family: sans-serif;
 }
 .Nav{
     position: fixed;
@@ -21,6 +23,11 @@ body{
     width: 100%;
     padding: 1rem 2rem 1rem 2rem;
     overflow: hidden;
+   
+   
+}
+.logo{
+    width: 40px;
 }
 ul li{
     list-style: none;
@@ -44,6 +51,7 @@ ul li{
     right: 20px;
     cursor: pointer;
     font-size: 20px;
+    width: 40px;
     
 }
 .mobileMenu{
@@ -54,10 +62,59 @@ ul li{
     width: fit;
     padding: 20px;
     background: #5956E9;
-    transform: translateX(170px);
+     
 }
 .mobileMenu li{
     margin: 5px 0px;
+    color: white;
+} 
+
+
+/* content */
+.container{
+    padding: 100px 50px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: auto;
+}
+/* .container .text{
+    background-color: aqua;
+} */
+.container .text h1{
+    font-size:50px ;
+    color: #302f2f;
+}
+.container .text p{
+    color: gray;
+    max-width: 500px;
+    margin: 20px 0;
+    padding: 3px;
+}
+.container .text a{
+    display: block;
+    background-color: #5956E9;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 7px;
+    border: 2px solid #5956E9;
+    cursor: pointer;
+}
+.container .text a:hover{
+    background-color: white;
+    color: #5956E9;
+}
+
+
+.img{
+    max-width: 350px;   
+}
+img{
+    width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -66,16 +123,19 @@ ul li{
     
     }
     .mobileBtn{
-        transform: translateY(70px);
+        display: none;
+
     }
     .mobileMenu{   
         display: none;
     }
     
-}
-@media screen and (min-width: 1567px) {
     .Nav{
         justify-content: space-evenly;
         
     }
 }
+@media screen and (min-width: 1567px) {
+}
+
+
