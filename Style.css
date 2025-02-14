@@ -50,8 +50,9 @@ ul li{
     position: absolute;
     right: 20px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
     width: 40px;
+    top: 10px;
     
 }
 .mobileMenu{
@@ -59,16 +60,23 @@ ul li{
     right: 0;
     top: 0;
     height: 100vh;
-    width: fit;
+    width: 180px;
     padding: 20px;
     background: #5956E9;
-     
+    display: none;
+
 }
 .mobileMenu li{
     margin: 5px 0px;
     color: white;
+    padding: 8px 3px;
+    border-radius:8px ;
 } 
-
+.mobileMenu li:hover{
+    background-color: white;
+    color: #5956E9;
+    cursor: pointer;
+}
 
 /* content */
 .container{
@@ -203,7 +211,9 @@ img{
 
 
 
-.mobileMenu{
-    display: none;
+.active{
+    display: block;
 }
-
+.go-left{
+    transform: translateX(-140px);
+}
