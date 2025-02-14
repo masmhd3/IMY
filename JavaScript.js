@@ -47,15 +47,7 @@
 //         }
 // }
 // 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
+
 
 let btnNav = document.getElementById('btn-img')
 let menuMobile = document.getElementById('menuMobile')
